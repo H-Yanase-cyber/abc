@@ -1,0 +1,141 @@
+/* リセットと基本設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background-color: #007acc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* ナビゲーション */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* セクションタイトル */
+h2 {
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #eee;
+  color: #666;
+  margin-top: 40px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+.hiro-image img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  object-position: center 90%;
+}
+
+.golf-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.golf-gallery figure {
+  flex: 1 1 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.golf-gallery img {
+  width: 100%;
+  height: 300px; /* ←ここで縦の高さを固定 */
+  object-fit: cover; /* 切り抜き風表示にする */
+  object-position: center top; /* 必要に応じて表示位置調整 */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+
+.golf-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.crop-box {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.crop-box img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease;
+}
+
+/* このクラスだけ画像を下にずらす！ */
+.shift-down img {
+  top: -175px; /* ← ここで「下寄り」に見せる。必要に応じて調整可能 */
+}
