@@ -88,7 +88,9 @@ footer {
   flex: 1 1 300px;
   max-width: 400px;
   text-align: center;
-  object-position: center 90%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .golf-gallery img {
@@ -104,33 +106,32 @@ footer {
   margin-top: 8px;
   font-size: 0.95em;
   color: #555;
+  padding: 5px 10px;
+  line-height: 1.4;
+  text-align: center;
 }
 
-/* クロップボックス */
 .crop-box {
   width: 100%;
   max-width: 400px;
   height: 300px;
   overflow: hidden;
   position: relative;
-  text-align: center;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* クロップボックス内の画像 */
 .crop-box img {
   width: 100%;
   height: auto;
   position: relative;
   top: 0;
+  object-fit: cover;
+  object-position: center 70%;
   transition: top 0.3s ease;
-  object-position: center 70%
 }
 
-/* 特定の画像だけ下にずらす */
-.shift-down img {
-  top: -175px;
-}
 
 /* ===== スマホ対応（画面幅600px以下） ===== */
 @media (max-width: 600px) {
