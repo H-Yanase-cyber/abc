@@ -131,10 +131,6 @@ footer {
   object-position: center 70%;
   transition: top 0.3s ease;
 }
-/* 特定の画像だけ下にずらす */
-.shift-down img {
-  top: -300px;
-}
 
 /* ===== スマホ対応（画面幅600px以下） ===== */
 @media (max-width: 600px) {
@@ -199,21 +195,21 @@ footer {
 
 /* 画像ごとに表示位置を調整 */
 .shift-3211 {
-  object-position: center 85%;
+  object-position: center 100%;
 }
 
 .shift-153809 {
-  object-position: center 90%;
+  object-position: center 100%;
 }
 
 .shift-7796 {
-  object-position: center 80%;
+  object-position: center 100%;
 }
 
 .shift-7795 {
-  object-position: center 78%;
+  object-position: center 100%;
 }
 
 .shift-5763 {
-  object-position: center 88%;
+  object-position: center 90%;
 }
