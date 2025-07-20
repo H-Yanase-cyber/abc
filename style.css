@@ -131,7 +131,10 @@ footer {
   object-position: center 70%;
   transition: top 0.3s ease;
 }
-
+/* 特定の画像だけ下にずらす */
+.shift-down img {
+  top: -300px;
+}
 
 /* ===== スマホ対応（画面幅600px以下） ===== */
 @media (max-width: 600px) {
