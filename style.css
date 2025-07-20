@@ -197,3 +197,23 @@ footer {
   }
 }
 
+/* 画像ごとに表示位置を調整 */
+.shift-3211 {
+  object-position: center 85%;
+}
+
+.shift-153809 {
+  object-position: center 90%;
+}
+
+.shift-7796 {
+  object-position: center 80%;
+}
+
+.shift-7795 {
+  object-position: center 78%;
+}
+
+.shift-5763 {
+  object-position: center 88%;
+}
