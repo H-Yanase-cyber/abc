@@ -210,3 +210,8 @@ footer {
 .shift-5763 {
   object-position: center 90%;
 }
+
+li {
+  white-space: normal;
+  word-break: break-word;
+}
