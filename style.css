@@ -1,3 +1,4 @@
+
 /* リセットと基本設定 */
 body {
   margin: 0;
@@ -63,19 +64,6 @@ footer {
   margin-top: 40px;
 }
 
-/* スマホ対応 */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  main {
-    margin: 20px;
-    padding: 15px;
-  }
-}
-
 .hiro-image img {
   width: 100%;
   height: auto;
@@ -102,12 +90,11 @@ footer {
 
 .golf-gallery img {
   width: 100%;
-  height: 300px; /* ←ここで縦の高さを固定 */
-  object-fit: cover; /* 切り抜き風表示にする */
-  object-position: center top; /* 必要に応じて表示位置調整 */
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  
 }
 
 .golf-gallery figcaption {
@@ -119,7 +106,7 @@ footer {
 .crop-box {
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: auto;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -137,5 +124,60 @@ footer {
 
 /* このクラスだけ画像を下にずらす！ */
 .shift-down img {
-  top: -175px; /* ← ここで「下寄り」に見せる。必要に応じて調整可能 */
+  top: -175px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #006bb3;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+  }
+
+  nav ul li a:hover {
+    background-color: #005999;
+    color: #fff;
+  }
+
+  main {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+
+  .golf-gallery img {
+    height: auto;
+  }
+
+  .crop-box {
+    height: auto;
+  }
+
+  .crop-box img {
+    top: 0;
+  }
+
+  .shift-down img {
+    top: 0;
+  }
 }
